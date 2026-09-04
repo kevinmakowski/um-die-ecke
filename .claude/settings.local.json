@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"dev.sh\")",
+      "Bash(nohup \"/Users/makowski/Desktop/Project 1/.claude/dev.sh\")",
+      "Bash(disown)",
+      "Read(//tmp/**)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/profil)",
+      "Bash(/usr/bin/curl -s https://cqtfeosmiocsdxzcxceg.supabase.co/rest/v1/posts?select=* -H 'apikey: sb_publishable_WP8nuisFAQW3d_HYspyIRA_drJhKOh9' -H 'Authorization: Bearer sb_publishable_WP8nuisFAQW3d_HYspyIRA_drJhKOh9')",
+      "Bash(/usr/bin/curl -s 'https://cqtfeosmiocsdxzcxceg.supabase.co/rest/v1/posts?select=id,type,category,title,description,location,created_at,profiles\\(display_name\\)&status=eq.open' -H 'apikey: sb_publishable_WP8nuisFAQW3d_HYspyIRA_drJhKOh9' -H 'Authorization: Bearer sb_publishable_WP8nuisFAQW3d_HYspyIRA_drJhKOh9')",
+      "Bash(/usr/bin/curl -s 'https://cqtfeosmiocsdxzcxceg.supabase.co/rest/v1/posts?select=id,postal_code,lat,lng&limit=1' -H 'apikey: sb_publishable_WP8nuisFAQW3d_HYspyIRA_drJhKOh9' -H 'Authorization: Bearer sb_publishable_WP8nuisFAQW3d_HYspyIRA_drJhKOh9')",
+      "Bash(xargs sed -i '' 's/orange/blue/g')",
+      "Bash(kill 11696)",
+      "Bash(/opt/homebrew/bin/node -e \"console.log\\(require.resolve\\('npm/bin/npm-cli.js'\\)\\)\")",
+      "Read(//opt/homebrew/Cellar/node/26.8.1/bin/**)",
+      "Bash(find /opt/homebrew/Cellar/node -name \"npm-cli.js\" 2>/dev/null)"
+    ]
+  }
+}

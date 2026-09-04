@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "umdieecke-dev",
+      "runtimeExecutable": "/opt/homebrew/bin/node",
+      "runtimeArgs": ["/Users/makowski/Desktop/Project 1/.claude/dev-launcher.js"],
+      "port": 3000,
+      "autoPort": false
+    }
+  ]
+}
