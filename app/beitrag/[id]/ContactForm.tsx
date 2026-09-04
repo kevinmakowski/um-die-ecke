@@ -53,7 +53,11 @@ export default function ContactForm({
     const {
       data: { user },
     } = await supabase.auth.getUser();
-    if (!user) return;
+    if (!user) {
+      setSending(false);
+      setError("Deine Sitzung ist abgelaufen. Bitte lade die Seite neu und melde dich erneut an.");
+      return;
+    }
 
     const { error } = await supabase.from("messages").insert({
       post_id: postId,
